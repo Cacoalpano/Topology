@@ -53,7 +53,7 @@ def tree_network():
     net = Mininet(topo=tree, build=False)
     net.addController(addController())
     net.build()
-    net.addNAT().configDefault()
+    #net.addNAT().configDefault()
     net.start()
     CLI(net)
 
@@ -67,7 +67,7 @@ def linear_network():
     net = Mininet(topo=linear, build=False)
     net.addController(addController())
     net.build()
-    net.addNAT().configDefault()
+    #net.addNAT().configDefault()
     net.start()
     CLI(net)
 
@@ -78,7 +78,7 @@ def single_network():
     net = Mininet(topo=node, build=False)
     net.addController(addController())
     net.build()
-    net.addNAT().configDefault()
+    #net.addNAT().configDefault()
     net.start()
     CLI(net)
 
